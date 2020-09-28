@@ -14,7 +14,8 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 
 import {DataService} from './services/data.service';
-import { NotfoundComponent } from './notfound/notfound.component'
+import { NotfoundComponent } from './notfound/notfound.component';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NotfoundComponent } from './notfound/notfound.component'
     AddTodoListComponent,
     HeaderComponent,
     HomeComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
