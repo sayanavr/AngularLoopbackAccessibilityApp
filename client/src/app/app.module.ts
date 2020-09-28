@@ -13,7 +13,8 @@ import { AddTodoListComponent } from './add-todo-list/add-todo-list.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 
-import {DataService} from './services/data.service'
+import {DataService} from './services/data.service';
+import { NotfoundComponent } from './notfound/notfound.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {DataService} from './services/data.service'
     TodoListComponent,
     AddTodoListComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
