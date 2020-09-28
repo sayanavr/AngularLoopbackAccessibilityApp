@@ -1,0 +1,52 @@
+
+form{ 
+    max-width: 30em; 
+    margin: 4em auto; 
+    position: relative;    
+    background: #f4f4f4;    
+    padding: 2em 3em;    
+    overflow: hidden;
+}
+    form h1{    
+        font-family: "Raleway";    
+        color:#4DD0E1; 
+    }
+    form input[type=text]::placeholder{   
+        font-family: "Raleway";   
+        color:#666; }
+    form .data{    
+        margin-top: 1em;
+    }
+    form .data li{ 
+        background: #fff;
+        border-left: 4px solid #4DD0E1;
+        padding: 1em; 
+        margin: 1em auto; 
+        color: #666; 
+        font-family: "Raleway";
+    }
+    form .data li i{    
+        float: right;    
+        color: #888;    
+        cursor: pointer;
+    }
+    form .input-group-text{    
+        background: #4DD0E1;    
+        border-radius: 50%;    
+        width: 5em;    
+        height: 5em;    
+        padding: 2em 23px;   
+        color: #fff;    
+        position: absolute;    
+        right: 13px;    
+        top: 78px;    
+        cursor: pointer;}
+        form .input-group-text i{    
+            font-size: 2em;}
+        form .form-control{ 
+            height: 3em;    
+            font-family: "Raleway";
+        }
+        form .form-control:focus{ 
+            box-shadow: 0;
+        }

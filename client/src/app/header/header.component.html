@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand mb-4 mynavbar" role="banner">
+    
+        <div class="navbar-header">
+            <a routerLink='/' class="navbar-brand">
+                <img width="30" height="30" class="d-inline-block align-top"
+                    src="../assets/images/to-do-app-icon-white.png" alt="To-do-Icon.png">
+                Getting things done</a>
+        </div>
+    
+
+        <div class="navbar navbar-dark " role="navigation">
+            
+            <div id="navbarContent">
+                <ul class="navbar-nav justify-content-end">
+               <li class="nav-item"> <a routerLink="" class="nav-link">Home</a></li>
+               <li class="nav-item"><a routerLink="addTodo" class="nav-link">Add List</a></li>
+               <li class="nav-item"> <a routerLink="viewTodo" class="nav-link">View List</a></li>
+            </ul>
+            </div>
+        </div>
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link fa fa-facebook" [socialShare]="'fb'"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fa fa-twitter" [socialShare]="'tw'"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fa fa-linkedin" [socialShare]="'in'"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fa fa-tumblr" [socialShare]="'tr'"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fa fa-reddit" [socialShare]="'rd'"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fa fa-pinterest" [socialShare]="'pn'"></a>
+        </li>
+
+    </ul>
+    
+</nav>

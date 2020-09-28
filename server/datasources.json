@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysqlDs": {
+    "host": "sl-us-south-1-portal.42.dblayer.com",
+    "port": 23120,
+    "url": "",
+    "database": "jobs",
+    "password": "Stable123",
+    "name": "mysqlDs",
+    "user": "jobs",
+    "connector": "mysql"
+  }
+}

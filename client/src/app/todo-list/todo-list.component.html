@@ -1,0 +1,31 @@
+<div *ngIf="todos;else noUsers" class="container" role="listitem">
+    <tr *ngIf="enableEdit">Please edit here:
+        <input type="number" name="id" [(ngModel)]="currentTodoItem.id">
+        <input type="text" name="text" [(ngModel)]="currentTodoItem.text">
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="completedCheck"
+                [(ngModel)]="currentTodoItem.completed">&nbsp;&nbsp;&nbsp;
+            <label class="form-check-label" for="completedCheck"> Done!</label>
+        </div>
+        <i (click)="editCurrentItem()" class="material-icons">save</i>
+        <i (click)="enableEdit=false" class="material-icons">cancel</i>
+    </tr>
+    <table class="table table-striped">
+        <tr *ngFor="let todo of todos">
+            <td>{{todo.id}}</td>
+            <td>{{todo.text}} </td>
+            <td>{{todo.date | date}} </td>
+            <td>
+                <span *ngIf="todo.completed"><i class="material-icons">done</i></span>
+                <span *ngIf="!todo.completed"><i class="material-icons">close</i></span>
+            </td>
+            <td>
+                <i (click)="editItem(todo)" class="material-icons">edit</i>
+                <i (click)="deleteItem(todo)" class="material-icons">delete</i>
+            </td>
+        </tr>
+    </table>
+</div>
+<ng-template #noUsers>
+    <h6>Nothing in the list!</h6>
+</ng-template>

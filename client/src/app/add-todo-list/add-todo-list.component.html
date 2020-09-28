@@ -1,0 +1,14 @@
+
+  <form (keydown)="keyDownFunction($event)">
+    <div class="form-group">
+      <h5 class="text-center text-info">Please enter your to-do list items here</h5>   
+      <label for="formGroupExampleInput">Id</label>
+      <input type="number" class="form-control" id="id" placeholder="Add Id" name="id" [(ngModel)]="todo.id" autofocus>
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Text</label>
+      <input type="text" class="form-control" id="txt" placeholder="Add Todo" name="todo" [(ngModel)]="todo.text">
+    </div>
+    <span class="btn btn-primary" (click)="addTodo()" id="addBtn">
+      <i class="material-icons">note_add</i></span>
+  </form>

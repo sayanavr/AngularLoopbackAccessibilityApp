@@ -1,0 +1,70 @@
+.to-do-img{
+    width: 60px;
+    height: 60px;
+}
+.header{
+    display: flex;
+}
+nav{
+    background-color: #0097A7;
+    margin-bottom: 0px !important;
+}
+.tabs .tab a {
+    color: #00BCD4;
+    background-color: #b2ebf256
+}
+
+.tabs .tab a:hover{
+    background-color: #00bbd41f;
+    outline: solid;
+}
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: #4dd0e156;
+    outline: none;
+}
+/* Style all font awesome icons */
+.fa {
+    margin-top: 8px;
+    padding: 15px;
+    font-size: 30px;
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  /* LinkedIn */
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    }
+  .fa-tumblr {
+      background: #2c4762;
+      color: white;
+    }
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+    }
+  .fa-reddit {
+    background: #ff5700;
+    color: white;
+    }

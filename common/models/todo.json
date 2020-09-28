@@ -1,0 +1,44 @@
+{
+  "name": "todo",
+  "plural": "todos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "forceId":false,
+  "options": {
+    "mysql":{
+      "table":"todolist"
+    },
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true,
+      "mysql":{
+        "columnName":"id"
+      }
+    },
+    "text": {
+      "type": "string",
+      "mysql":{
+        "columnName":"text"
+      }
+    },
+    "date": {
+      "type": "date",
+      "mysql":{
+        "columnName":"date"
+      }
+    },
+    "completed": {
+      "type": "boolean",
+      "mysql":{
+        "columnName":"completed"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
